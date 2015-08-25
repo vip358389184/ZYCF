@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zyfy.dao.LoanDao">
+        	
+    <resultMap type="com.zyfy.pojo.Loan" id="LoanPOJO">
+		<result property="ID" column="ID" />
+		<result property="AMOUNT" column="AMOUNT" />
+		<result property="AUTOSPLITTED" column="AUTOSPLITTED" />
+		<result property="BID_AMOUNT" column="BID_AMOUNT" />
+		<result property="BID_NUMBER" column="BID_NUMBER" />
+		<result property="METHOD" column="METHOD" />
+		<result property="MORTGAGED" column="MORTGAGED" />
+		<result property="ORDINAL" column="ORDINAL" />
+		<result property="RATE" column="RATE" />
+		<result property="REWARDED" column="REWARDED" />
+		<result property="STATUS" column="STATUS" />
+		<result property="TIMECLEARED" column="TIMECLEARED" />
+		<result property="TIMEFINISHED" column="TIMEFINISHED" />
+		<result property="TIMEOPEN" column="TIMEOPEN" />
+		<result property="TIMEOUT" column="TIMEOUT" />
+		<result property="TIMESETTLED" column="TIMESETTLED" />
+		<result property="TITLE" column="TITLE" />
+		<result property="DAYS" column="DAYS" />
+		<result property="MONTHS" column="MONTHS" />
+		<result property="YEARS" column="YEARS" />
+		<result property="REQUEST_ID" column="REQUEST_ID" />
+		<!-- <association property="role" column="user_id" javaType="java.util.List" select="getRoleByUserID"/>   -->
+	</resultMap>
+	
+        	<select id="getLoan" resultMap="LoanPOJO">
+        		 select * from TB_LOAN
+        	</select>  
+        	 
+</mapper>
