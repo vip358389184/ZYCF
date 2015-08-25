@@ -9,7 +9,7 @@
 <body>
 		<form action="loan" method="get">
 			<input type="text"  name="name"> 
-			<button type="submit"></button>
+			<button type="submit"></button> 
 		</form>
 </body>
 </html>
