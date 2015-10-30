@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zyfy.dao.LoanDao">
+  <!--       	
+    <resultMap type="com.zyfy.pojo.LoanRequest" id="LoanRequest">
+		<result property="ID" column="ID" />
+		<result property="AMOUNT" column="AMOUNT" />
+		<result property="DESCRIPTION" column="DESCRIPTION" />
+		<result property="EMPLOYEEID" column="EMPLOYEEID" />
+		<result property="GUARANTEEINFO" column="GUARANTEEINFO" />
+		<result property="HIDDEN" column="HIDDEN" />
+		<result property="METHOD" column="METHOD" />
+		<result property="MORTGAGEINFO" column="MORTGAGEINFO" />
+		<result property="MORTGAGED" column="MORTGAGED" />
+		<result property="PURPOSE" column="PURPOSE" />
+		<result property="RATE" column="RATE" />
+		<result property="RISKINFO" column="RISKINFO" />
+		<result property="SERIAL" column="SERIAL" />
+		<result property="SOURCE" column="SOURCE" />
+		<result property="STATUS" column="STATUS" />
+		<result property="TIMESUBMIT" column="TIMESUBMIT" />
+		<result property="TITLE" column="TITLE" />
+		<result property="USER_ID" column="USER_ID" />
+		<result property="DAYS" column="DAYS" />
+		<result property="MONTHS" column="MONTHS" />
+		<result property="YEARS" column="YEARS" />
+		<result property="GUARANTEE_ID" column="GUARANTEE_ID" />
+		<result property="GUARANTEE_REALM" column="GUARANTEE_REALM" />
+		<result property="MAXAMOUNT" column="MAXAMOUNT" />
+		<result property="MAXTIMES" column="MAXTIMES" />
+		<result property="MAXTOTALAMOUNT" column="MAXTOTALAMOUNT" />
+		<result property="MINAMOUNT" column="MINAMOUNT" />
+		<result property="STEPAMOUNT" column="STEPAMOUNT" />
+		<result property="REVIEWCOMMENT" column="REVIEWCOMMENT" />
+		<result property="CLIENTPRIV" column="CLIENTPRIV" />
+		<result property="GUARANTYSTYLE" column="GUARANTYSTYLE" />
+		<result property="PRODUCTID" column="PRODUCTID" />
+		<result property="ENTITYID" column="ENTITYID" />
+		<result property="REALM" column="REALM" />
+		<result property="DISPLAYUSERID" column="DISPLAYUSERID" />
+		<result property="PARENTID" column="PARENTID" />
+		<result property="PUREREQUEST" column="PUREREQUEST" />
+		<result property="AUTOABLE" column="AUTOABLE" />
+		<result property="DAYOFREPAYMENT" column="DAYOFREPAYMENT" />
+		<result property="DAYSOFYEAR" column="DAYSOFYEAR" />
+		<result property="REPAYMENTPERIOD" column="REPAYMENTPERIOD" />
+		<result property="CODE" column="CODE" />
+		<result property="VALUEDATE" column="VALUEDATE" />
+		<result property="RECEIVER_ID" column="RECEIVER_ID" />
+		<result property="RECEIVER_REALM" column="RECEIVER_REALM" />
+		<result property="DUEDATE" column="DUEDATE" />
+		<result property="AUTORATIO" column="AUTORATIO" />	
+		<association property="role" column="user_id" javaType="java.util.List" select="getRoleByUserID"/>  
+	</resultMap>
+	
+        	<select id="getLoan" resultMap="LoanRequest">
+        		 select * from TB_LOANREQUEST
+        	</select>   -->
+        	 
+</mapper>

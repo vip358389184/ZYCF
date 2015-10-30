@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WEIXIN>
+	<!-- 资金变动通知 -->
+	<MoneyChange>
+		<!-- 数据模版的格式 -->
+		<data>first,RightName,DealType,Money,remark</data>
+		<!-- 是否是群发 true 为单发 false 为群发  -->
+		<type>true</type>
+		<!-- 类型 -->
+		<class>
+			感谢您对于左右逢源的支持,我们将继续衷心的为您提供服务!,
+			感谢您对左右逢源的支持,中阳和财富祝你”钱”途似锦,富贵满园!,
+			感谢您对于左右逢源的支持,我们将继续衷心的为您提供服务!
+		</class>
+	</MoneyChange>
+	
+	<newProject>
+		<data>first,RightName,DealType,Money,remark</data>
+		<type>true</type>
+		<class>欢迎投资,机会难得哦</class>
+	</newProject>
+</WEIXIN>

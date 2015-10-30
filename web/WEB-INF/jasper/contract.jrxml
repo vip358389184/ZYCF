@@ -1,0 +1,1461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="contract" language="groovy" pageWidth="612" pageHeight="792" whenNoDataType="AllSectionsNoDetail" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b638d725-56e0-404e-ab04-e75f63ea98dd">
+	<property name="ireport.zoom" value="1.7715610000000048"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="96"/>
+	<style name="table">
+		<box>
+			<pen lineWidth="1.0" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Crosstab Data Text" hAlign="Center"/>
+	<subDataset name="Table Dataset 1" uuid="ea763836-4fdd-4c0d-843a-d77c1c901d28"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="a_cold" class="java.lang.String">
+		<fieldDescription><![CDATA[a_cold]]></fieldDescription>
+	</field>
+	<field name="a_name" class="java.lang.String">
+		<fieldDescription><![CDATA[a_name]]></fieldDescription>
+	</field>
+	<field name="a_userName" class="java.lang.String">
+		<fieldDescription><![CDATA[a_userName]]></fieldDescription>
+	</field>
+	<field name="amount" class="java.lang.String">
+		<fieldDescription><![CDATA[amount]]></fieldDescription>
+	</field>
+	<field name="b_cold" class="java.lang.String">
+		<fieldDescription><![CDATA[b_cold]]></fieldDescription>
+	</field>
+	<field name="b_name" class="java.lang.String">
+		<fieldDescription><![CDATA[b_name]]></fieldDescription>
+	</field>
+	<field name="b_userName" class="java.lang.String">
+		<fieldDescription><![CDATA[b_userName]]></fieldDescription>
+	</field>
+	<field name="capital" class="java.lang.String">
+		<fieldDescription><![CDATA[capital]]></fieldDescription>
+	</field>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="contractNumber" class="java.lang.String">
+		<fieldDescription><![CDATA[contractNumber]]></fieldDescription>
+	</field>
+	<field name="contractTime" class="java.lang.String">
+		<fieldDescription><![CDATA[contractTime]]></fieldDescription>
+	</field>
+	<field name="d_address" class="java.lang.String">
+		<fieldDescription><![CDATA[d_address]]></fieldDescription>
+	</field>
+	<field name="d_corporation" class="java.lang.String">
+		<fieldDescription><![CDATA[d_corporation]]></fieldDescription>
+	</field>
+	<field name="day" class="java.lang.String">
+		<fieldDescription><![CDATA[day]]></fieldDescription>
+	</field>
+	<field name="endTime" class="java.lang.String">
+		<fieldDescription><![CDATA[endTime]]></fieldDescription>
+	</field>
+	<field name="periods" class="java.lang.String">
+		<fieldDescription><![CDATA[periods]]></fieldDescription>
+	</field>
+	<field name="reat" class="java.lang.String">
+		<fieldDescription><![CDATA[reat]]></fieldDescription>
+	</field>
+	<field name="repayment" class="java.lang.String">
+		<fieldDescription><![CDATA[repayment]]></fieldDescription>
+	</field>
+	<field name="startTime" class="java.lang.String">
+		<fieldDescription><![CDATA[startTime]]></fieldDescription>
+	</field>
+	<field name="use" class="java.lang.String">
+		<fieldDescription><![CDATA[use]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="752" splitType="Stretch">
+			<textField>
+				<reportElement x="315" y="153" width="115" height="19" uuid="adf77700-7658-4634-a7fe-6260d91b4aa7"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contractTime}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="74" y="153" width="241" height="19" uuid="59c82ce6-df1f-4fb0-8e5d-a09773e16ccd"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[本借款协议(下称“本协议”)由以下各方于]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="153" width="100" height="19" uuid="804839e7-0f99-4f4f-986b-2d42dcc5ff6d"/>
+				<textElement>
+					<font fontName="SimSun" size="14"/>
+				</textElement>
+				<text><![CDATA[签署:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="181" width="100" height="20" uuid="be2666d0-f405-44d5-9bd3-fb5e5454df85"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[甲方 (出借人):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="209" width="62" height="20" uuid="a563e29f-63ad-4b70-8d1e-b97acff0eb39"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[真实姓名:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="237" width="62" height="20" uuid="c98a51bc-9fc4-441f-8dc1-936fc45e634e"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[身份证号:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="265" width="124" height="20" uuid="86ab10e1-de7a-4c3e-a77d-3c7199001c75"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[左右逢园平台用户名:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="294" width="100" height="20" uuid="dc62078d-e644-4576-882e-fe9185937b11"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[乙方 (借款人):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="75" y="322" width="62" height="20" uuid="03dbfdb7-1963-4802-96e2-673c19815606"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[真实姓名:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="75" y="378" width="124" height="20" uuid="85223336-8dc2-4944-8fb4-d614e28e7097"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[左右逢园平台用户名:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="75" y="350" width="62" height="20" uuid="fa182a64-f801-4960-9339-3379474ea4fd"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[身份证号:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="406" width="242" height="20" uuid="acbb86b9-539e-43c6-9633-f83cbf7ff022"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[丙方 (见证人):中阳财富投资控股有限公司]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="434" width="229" height="20" uuid="83f51032-7777-41e7-a28c-aa87efbfe5ca"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[联系方式:4006-901-123]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="472" width="242" height="20" uuid="f988a112-9125-4a7f-86ed-f4d4b9268a47"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[丁方 (保证人):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="501" width="62" height="20" uuid="bfa8a5e3-1a8e-4041-960a-2b6e7315d4f6"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[住所地:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="529" width="76" height="20" uuid="c768508d-5131-49c8-ba3a-8ffb725ce2f0"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[法定代表人:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="567" width="100" height="20" uuid="499ced12-bc72-47fd-84fc-5c6a7d3a3c59"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[鉴于:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="606" width="424" height="45" uuid="de670752-579a-498c-8cff-aec46967ab2e"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[1. 丙方是一家在北京市合法成立并有效存续之有限责任公司,拥有左右逢园网
+站 (www.zuoyoufy.com) 的所有权和经营权,为本协议项下的交易提供信息服
+务;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="662" width="424" height="45" uuid="94c7a6ed-0d61-4024-a76d-2ba63ccc21b0"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[2. 乙方已在左右逢园网站注册,并承诺其提供给丙方的信息是合法的、真实的、
+准确的、完整的;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="75" y="54" width="50" height="20" uuid="fd370ed9-dffa-4447-a3bb-ec53842cf52f"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[合同编号]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="125" y="54" width="120" height="20" uuid="20556e56-d08e-4480-82d9-519f4b41d7d7"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contractNumber}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="245" y="96" width="87" height="26" uuid="8aad9082-297d-4e3b-9aaf-d93bd0c5736d"/>
+				<textElement>
+					<font fontName="SimSun" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[借款协议]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="138" y="209" width="139" height="20" uuid="f1d860f5-807a-42c0-8353-8231e90e46c5"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{a_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="138" y="237" width="139" height="20" uuid="1c181dd7-a552-4d6b-8b18-ddb1ebca91f0"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{a_cold}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="201" y="265" width="100" height="20" uuid="6604975c-f186-4f3a-a467-cbc490f63cab"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{a_userName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="138" y="322" width="100" height="20" uuid="295c93cc-5ab6-442f-bf58-e1909b11b424"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{b_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="138" y="350" width="100" height="20" uuid="202562dd-5bcf-414f-a2e6-5d095e705986"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{b_cold}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="199" y="378" width="100" height="20" uuid="2c4e22b7-68e5-4841-9190-a57caf0252fc"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{b_userName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="137" y="501" width="100" height="20" uuid="35e93920-d137-46b3-94c7-911b90d51112"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{d_address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="529" width="100" height="20" uuid="fdb4e56a-56ba-481b-ba47-e98e9743fa17"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{d_corporation}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="752">
+			<staticText>
+				<reportElement x="74" y="74" width="424" height="45" uuid="8714cd75-f960-4d58-a560-ba6f123887a4"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3. 甲方承诺对本协议涉及的借款具有完全的支配能力,是其自有闲散资金,为
+其合法所得,并承诺其提供给丙方的信息是合法的、真实的、准确的、完整
+的;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="127" width="424" height="20" uuid="82d95b5d-900c-43ae-9c9c-ee015ee4f78d"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[4. 乙方有借款需求,甲方亦同意借款,双方有意成立借贷关系。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="155" width="424" height="32" uuid="2ce38c5e-a8c3-4b30-9eb6-1e84bcffa8ce"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[5. 丁方系合法成立并有效存续的担保公司,具有相应的担保资质及担保能力。
+   丁方同意为乙方在本协议项下的债务提供不可撤销之连带责任担保。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="195" width="424" height="20" uuid="78e11c92-c2f5-4e02-bbcc-2031f354ad95"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[据此,各方经协商一致,达成如下协议,以资共同遵照履行:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="223" width="100" height="20" uuid="cbf5de33-30ed-4caf-9486-faa1282a2b5f"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[1. 借款基本信息]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="243" width="100" height="22" uuid="2cde81b5-e7b2-47d1-b22c-ac5e05b6ed53"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[借款详细用途]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="173" y="243" width="325" height="22" uuid="45f41675-8ec2-4726-aed8-00f0f47b3d8f"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{use}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="286" y="0" width="100" height="74" uuid="f046338b-b257-4a61-9f51-212bb740e9ad"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="418" width="375" height="20" uuid="7cf1bb55-b81d-4f38-8f4a-9da0d8a3bee9"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[2. 协议的订立及支付]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="446" width="424" height="45" uuid="c8d9d8e9-0153-48cf-a7e2-80e27d871dde"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[2.1 各方同意并确认,各方通过自行或授权有关方根据左右逢园网站有关规
+则和说明,在左右逢园网站进行借款申请和投标操作等方式确认签署本协
+议。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="499" width="424" height="45" uuid="498fe445-32c6-4bdc-9151-a516d2332dfe"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[2.2 各方通过上述方式接受本协议且丙方审核通过时,本协议立即成立;协
+议成立的同时甲方不可撤销地授权丙方将出借款项在扣除相关费用后划转、
+支付给乙方,出借款项由丙方根据授权划转完毕时本协议正式生效。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="553" width="424" height="45" uuid="e255cccf-0d1b-4995-aa09-7da7f5fed858"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[2.3 甲方同意并授权丙方按本协议及左右逢园网站有关规则的约定对出借
+款项和相关费用进行划扣和支付,并由丙方代为收取乙方支付的借款本息及
+有关费用。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="606" width="375" height="20" uuid="0fe22bbe-5de2-456c-8128-4fa4a9309d0c"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3. 各方权利和义务]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="634" width="375" height="20" uuid="0ecafa89-8859-40c8-9fd1-e55ba49b2e4b"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3.1 甲方的权利和义务]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="663" width="424" height="45" uuid="7cfc2dec-73f3-47e6-b149-8792b0704c00"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.1.1 甲方保证其所用于出借的资金来源合法,甲方是该资金的合法所有
+人,如果第三人对资金归属、合法性问题发生争议,由甲方负责解决。如甲
+方未能解决,则放弃享有其所出借款项所带来的利息收益。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="265" width="100" height="22" uuid="b61040e0-4566-412f-9e62-fe4af3b7a81b"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[借款本金数额]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="287" width="100" height="22" uuid="e5987ecf-2a45-4931-ac87-b16a116749c9"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[借款年利率]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="309" width="100" height="22" uuid="52e9676a-5463-42ab-82ae-28e106a9f8ff"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[借款期限]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="331" width="100" height="22" uuid="82be56db-7954-44b0-b3ca-903c7694eb98"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[月偿还本息数额]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="353" width="100" height="22" uuid="98df46cf-dd8c-4ee3-8fed-391247f3098c"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[还款期数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="375" width="100" height="35" uuid="9b400456-d029-40c8-abb2-166045c95c41"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[借款详细用途]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="173" y="265" width="130" height="22" uuid="a8f4478c-00e7-4b69-bbb1-50b1a01d1559"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{amount}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="342" y="265" width="156" height="22" uuid="8c19286a-5e33-413a-82e1-eaceaf81e5d6"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{capital}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="303" y="265" width="39" height="22" uuid="cb3fd072-c44f-4534-85c6-2210e23f129d"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[大写]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="173" y="287" width="325" height="22" uuid="dd81fd52-c094-4fc3-925d-f1792890be6c"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{reat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="173" y="309" width="113" height="22" uuid="d4be0db4-6753-4ce8-b5e1-2b30366f0785"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{startTime}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="286" y="309" width="40" height="22" uuid="2eba13f6-7dda-41fc-a406-3a980105a41d"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[起,至]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="326" y="309" width="113" height="22" uuid="b297f944-3c07-4f14-978f-f070d44230ba"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Top">
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{endTime}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="439" y="309" width="59" height="22" uuid="b05abade-be9b-4b86-9ff6-dd3ba01dbe5d"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Top">
+					<font fontName="SimSun" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[止]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="331" width="325" height="22" uuid="6a1d7763-1e60-46e0-ab5e-281980c5d07d"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ 参见附件一中还款详情表]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="173" y="353" width="325" height="22" uuid="a9ee4b2b-34df-42aa-99dc-f8045dbff6ac"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{periods}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="173" y="375" width="26" height="17" uuid="992e3c97-da34-43aa-917c-4b22f165de8a"/>
+				<box>
+					<pen lineWidth="1.0"/>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="0.0"/>
+					<rightPen lineWidth="0.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[ 自]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="198" y="375" width="78" height="17" uuid="2bac5944-87eb-42a5-b36c-1b321448f208"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{repayment}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="276" y="375" width="50" height="17" uuid="c3cbaf71-e832-4da9-875f-884697b22a8f"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[起,每月]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="401" y="375" width="97" height="17" uuid="b2df28e8-226b-489a-a583-90427e10da11"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[(若当月没有该日,]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="325" y="375" width="77" height="17" uuid="aae4bbd1-785c-4b98-9f49-0f0cead4bc46"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Justified" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{day}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="173" y="391" width="325" height="19" uuid="08e93c3f-d0f0-403b-be1d-2276a05777e1"/>
+				<box>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement verticalAlignment="Middle">
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[则还款日为当月最后一天,节假日不顺延)]]></text>
+			</staticText>
+		</band>
+		<band height="752">
+			<staticText>
+				<reportElement x="242" y="0" width="100" height="74" uuid="f992b4ae-6825-4974-b8d2-46d1ecb4e23d"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="74" width="424" height="32" uuid="b7f66e7b-e5d0-40a8-b4e2-e346a6e08944"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.1.2 甲方享有其所出借款项所带来的利息收益,并应主动缴纳由利息所得
+带来的可能的税费。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="115" width="424" height="45" uuid="ffe029d6-9df5-4d49-9aef-d23209cfe64e"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.1.3 就甲方在本协议项下对乙方的部分或全部债权,甲方有权根据自己的
+意愿对外转让,并授权丙方可以视情况(必要时)将债权转让事项通知乙方
+和丁方。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="169" width="407" height="20" uuid="083af14f-cb8f-403b-a61c-19c705d9bc40"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.1.4 如乙方违约,甲方有权要求丙方提供其已获得的乙方及丁方的信息。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="198" width="424" height="32" uuid="d00c7731-1889-4b71-819d-1628fe0f8510"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.1.5 甲方承诺对依据本协议获得的乙方信息或资料予以保密,除用于本协
+议目的进行出借与合理催收外,不得向外转让或披露。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="240" width="241" height="20" uuid="3b188c0a-b67d-4c09-a5ef-b403c0445c58"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[3.2 乙方权利和义务]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="269" width="424" height="45" uuid="2c03c26a-de03-495a-b3a5-a84cbcfbc0b7"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.2.1 乙方必须按期足额向甲方归还每期应还本金和利息,向丙方按期足额
+支付相关借款管理费和服务费用,并支付与乙方逾期及提前还款有关的费
+用。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="323" width="422" height="20" uuid="cb9b2d55-0409-46b3-8e7b-5196761603bb"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.2.2 乙方承诺所借款项不用于任何违法用途]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="352" width="422" height="90" uuid="455c90f2-0a52-46d5-a4e4-7f7cc006ca1c"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.2.3 乙方确认甲方可以根据自己的意愿对其根据本协议形成的对乙方的
+部分或全部债权进行转让,并特此同意甲方届时转让债权无需另行通知乙
+方;同时乙方承诺若届时需要,将采取必要措施配合债权的一次或多次转让
+或届时债权人债权的实现。在债权转让后,甲方在本协议项下的权利和义务
+自动转移到债权受让人名下,乙方应按照本协议的约定向债权受让人支付每
+期应还借款本息,不得以未接到债权转让通知为由拒绝履行还款义务。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="451" width="422" height="32" uuid="362aae35-340d-4eb1-a3b4-ab80cbf338f6"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.2.5 乙方同意,甲方和丙方有权使用其自行收集或乙方提供的乙方资料和
+信息用于以下用途(包括但不限于):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="492" width="412" height="32" uuid="dac8637e-025d-4793-84b5-4f715fc47bf7"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[(1)为了提供本协议项下的服务,丙方向有关的合作机构提供必要之资
+料;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="533" width="410" height="20" uuid="82204c23-3ac0-4dc1-87c0-1f94cb4af610"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[(2)用于解决争议、对纠纷进行调停等。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="562" width="422" height="20" uuid="471f2607-cae5-4ff2-97f4-3ec98c6c4c0d"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.2.6 乙方有权了解其在丙方的信用评审进度及结果。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="591" width="422" height="20" uuid="420a0d69-55f9-46c3-82d8-4c1323179060"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.2.7 乙方不得将本协议项下的任何权利义务转让给任何其他方。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="621" width="424" height="45" uuid="d446d4dc-c598-4b8e-9d52-0216d6c11550"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.2.8 乙方同意并确认,本协议如涉及两人以上借款,任一借款人均应履行
+本合同项下的义务,对全部借款承担连带清偿责任,甲方和丙方有权向任一
+借款人追索本息及其他相关费用。]]></text>
+			</staticText>
+		</band>
+		<band height="752">
+			<staticText>
+				<reportElement x="99" y="73" width="424" height="20" uuid="6bb1f13e-46b2-4446-b070-baa987a51883"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.3 丙方的权利和义务]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="101" width="424" height="45" uuid="078393ac-f6b0-47d7-bdb5-73dd3f1df506"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.3.1 丙方有权根据乙方提供的各项信息及丙方独立获得的信息评定乙方
+在丙方处所拥有的个人信用等级,并根据对乙方个人信息的评审结果,决定
+是否审核通过并将乙方的借款需求向甲方进行推荐。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="154" width="424" height="45" uuid="a0801f90-a560-420a-84fa-95f04e2cd07c"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.3.2 甲方同意向乙方出借相应款项时,已委托丙方在本协议成立后将该笔
+借款直接划付至乙方账户。甲方授权并委托丙方代其收取本协议所约定的出
+借人每月应收本息,代收后按照甲方的要求进行处置,乙方对此表示认可。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="207" width="412" height="32" uuid="9f276c52-0fd7-4e52-ade6-da89fca4a011"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.3.3 丙方有权就为本协议借款所提供的服务向乙方收取借款管理费和/或
+服务费。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="247" width="422" height="90" uuid="fa8b111d-eb0f-4b54-8977-6e9962a0166f"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.3.4 甲乙双方同意丙方有权代甲方在必要时对乙方及丁方进行贷款的违
+约提醒及催收工作,包括但不限于电话通知、上门通知、发律师函、对乙方
+及丁方提起诉讼等。甲方在此确认委托丙方为其进行以上工作,并授权丙方
+可以将此工作委托给其他方进行。乙方及丁方对前述委托的提醒、催收事项
+已明确知晓并应积极配合,同时应承担因乙方逾期还款及丁方逾期承担保证
+责任而产生的催收费用及各项违约责任。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="346" width="424" height="45" uuid="7e349825-b323-4a27-8adc-3b86d2731492"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.3.5 丙方接受甲乙双方的委托行为所产生的法律后果由相应委托方承担。
+如因甲方、乙方、丁方或其他方(包括但不限于技术问题)造成的延误或错
+误,丙方不承担任何责任。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="399" width="424" height="45" uuid="8e394595-dbe8-45d9-bfd4-c08fbf1fb222"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.3.6 丙方应对甲方和乙方及丁方的信息及本协议内容保密;如任何一方违
+约,或因相关权力部门要求(包括但不限于法院、仲裁机构、金融监管机构
+等),丙方有权披露。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="452" width="424" height="16" uuid="70962fcb-95b0-4751-80ca-ababd0c511b6"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.4 丁方的权利和义务:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="477" width="422" height="32" uuid="3271a922-4c22-466d-8fca-923b581e8021"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.4.1 丁方根据乙方提供的资信材料进行审核评估,确信乙方具有偿还能力,
+愿意为其在本协议项下的债务提供不可撤销连带担保责任。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="517" width="424" height="77" uuid="8077666d-44ef-45ee-b85f-a365538e452a"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.4.2 如乙方逾期偿还甲方或丙方的借款本息、借款服务费及其他相关费
+用,则丁方承诺在乙方逾期还款超过 5 日内立即代乙方向甲方及丙方清偿
+全部的借款本息、罚息或滞纳金、借款服务费及其他各项费用,上述其他费
+用包括但不限于催收费用、违约金、损害赔偿金及实现债权的费用(包括诉
+讼费及律师费等)。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="604" width="424" height="45" uuid="23ddd112-0c58-4345-ba09-53572deba218"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.4.3 保证期间自本协议签署之日起至借款期限届满之日后两年。如乙方履
+行完毕偿还借款本息、罚息以及与借款相关的各项费用的义务,则丁方的保
+证责任随即消灭。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="657" width="422" height="32" uuid="f7a9ae7e-4b5a-4375-ab80-f573d72bf493"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.4.4 丁方代乙方偿还借款本息及其他各项费用后,有权就代为垫付的款项
+向乙方追偿。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="286" y="0" width="100" height="74" uuid="977ab78f-1af3-499b-ab19-a8af87e08151"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+		<band height="752">
+			<staticText>
+				<reportElement x="99" y="74" width="424" height="45" uuid="670f66c0-303c-437c-a6d1-b4471ab5ca86"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.4.5 就丁方为乙方提供不可撤销连带保证事宜,乙方同意向丁方提供相应
+的反担保措施及支付相应的担保服务费,具体反担保措施及担保服务费由乙
+方和丁方另行协商约定,并书面告知丙方。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="128" width="423" height="59" uuid="51055e72-cb63-4aa3-a606-76708159257e"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.4.6 丁方确认在保证期间内,甲方可以根据自己的意愿对其根据本协议形
+成的对乙方的部分或全部债权进行转让,并特此同意甲方届时转让债权无需
+另行通知丁方且丁方需继续承担保证义务。丁方不得以未接到债权转让通知
+为由拒绝履行保证义务]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="195" width="423" height="59" uuid="9b9d0b96-8f05-4169-9cdc-7746d907eb0a"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[3.4.7 丁方同意并确认:本协议如涉及两个以上的保证人提供连带担保责
+任,则任一保证人均应履行本合同项下的保证义务,对全部借款本息、罚息、
+滞纳金、借款服务费、违约金、损害赔偿金、主张债权的费用等承担连带保
+证责任。甲方和丙方有权向任一保证人主张保证责任。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="264" width="343" height="16" uuid="a83ec003-78e5-4bcd-a587-d34f0e5a2919"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[4. 借款服务费等费用]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="290" width="423" height="59" uuid="df56ba2e-5124-4280-ab4a-0d3d84e1cb78"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[4.1 在本协议中,“借款管理费”和“居间服务费”是指因丙方为乙方提供
+信用咨询、评估、还款提醒、账户管理、还款特殊情况沟通等相关服务(统
+称“信用服务”)而由乙方支付给丙方的报酬(统称借款服务费)。具体金
+额计算方式以左右逢园网站公告的《左右逢园网站费用及其他规则》为准。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="357" width="422" height="32" uuid="6d4c77e6-5a8e-4c3f-b539-480dcbf27f4a"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[4.2 如乙方和丙方协商一致调整借款服务费时,无需经过甲方和丁方同意,
+且丁方同意就调整后的借款服务费,且仍承担连带担保责任。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="389" width="343" height="16" uuid="3729fc43-320f-4b8f-b129-4ec2243eb9a0"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[5. 违约责任]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="421" width="422" height="32" uuid="022a5a04-03e9-4a8a-911d-ddec9741a638"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[5.1 合同各方均应严格履行合同义务,非经各方协商一致或依照本协议约
+定,任何一方不得解除本协议。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="461" width="423" height="59" uuid="6c2f8e8d-ef3d-4d2c-bf3f-a7127c7ac1ec"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[5.2 任何一方违约,违约方应承担因违约使得其他各方产生的费用和损失,
+包括但不限于调查、诉讼费、律师费等,应由违约方承担。如违约方为乙方
+的或丁方的,则甲方有权立即解除本协议,并要求乙方立即偿还未偿还的本
+金、利息、罚息,并要求丁方承担连带保证责任。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="98" y="528" width="424" height="45" uuid="3551643a-b911-4b11-bca1-61d7d31feadf"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[5.3 本协议提前解除时,若乙方在左右逢园网站的账户里有任何资金余款,
+丙方有权按照本协议第 5.4 条的清偿顺序将乙方的余款用于清偿,并要求乙
+方支付因此产生的相关费用。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="583" width="343" height="16" uuid="332f00fe-56ce-4c0a-9b87-aae911b841c4"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[5.4 乙方的每期还款均应按照如下顺序清偿:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="607" width="355" height="16" uuid="2aceda38-7096-4dc6-b3cb-1e4c22da11d6"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(1)根据本协议产生的其他全部费用;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="631" width="355" height="16" uuid="742cd467-a6db-447f-99d6-38e93f748a98"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(2)罚息;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="655" width="355" height="16" uuid="d55d3c6f-eb8c-40b6-a827-30e836e985e9"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(3)逾期管理费;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="245" y="0" width="100" height="74" uuid="9c097f1d-c887-4c2a-a750-448f5e5f31ec"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+		</band>
+		<band height="752">
+			<staticText>
+				<reportElement x="232" y="0" width="100" height="74" uuid="1b3a65f9-8a49-4e7c-983b-ad84d8680b31"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="74" width="261" height="16" uuid="f3e75b58-7fff-4310-ad33-4ff03dbcbe62"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(4)拖欠的利息;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="98" width="229" height="16" uuid="52d75e81-b8be-46d2-a639-3da171f659e4"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(5)拖欠的本金;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="122" width="355" height="16" uuid="43ee1971-4760-4522-a42e-8b7a0727018c"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(6)正常的利息;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="146" width="355" height="16" uuid="24b8eda0-52f5-463a-9e42-18926155493d"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[(7)正常的本金。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="172" width="422" height="32" uuid="4c6b0fda-b1e7-43b3-ad1a-1e44b48845b6"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[5.5 乙方应严格履行还款义务,如乙方逾期还款,则应按照下述条款向甲方
+支付逾期罚息,自逾期开始之后,逾期本金的正常利息停止计算。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="212" width="303" height="16" uuid="7790a06f-d60b-48c0-9e7a-da6df8020725"/>
+				<textElement textAlignment="Center">
+					<font fontName="SimSun" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[罚息总额 = 逾期本息总额×对应罚息利率×逾期天数;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="230" width="142" height="22" uuid="84c8338d-7fde-401f-a364-551077d1c0ce"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[逾期天数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="215" y="230" width="142" height="22" uuid="ea3f77db-547a-4159-a7b4-c83f374462bc"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1— 10 天]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="215" y="252" width="142" height="22" uuid="17d7f540-3400-4263-a188-23b6301e6e77"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[0.05%]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="252" width="142" height="22" uuid="c6206185-80b4-421b-8d35-6c0261762e6c"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[罚息利率]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="393" width="424" height="77" uuid="bbe24299-8eb4-45d9-a9b2-de162c42be95"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[5.7 如果乙方逾期支付任何一期还款超过 10 天且丁方未承担保证责任代乙
+方偿还拖欠的借款本息及其他费用的,或连续逾期三期以上(含三期),或
+累计逾期达五期以上(含五期),或甲方/丙方发现乙方出现逃避、拒绝沟
+通或拒绝承认欠款事实、故意转让资金、信用情况恶化等危害本协议借款的
+情形,则本协议项下的全部借款本息提前到期,同时:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="283" width="422" height="32" uuid="9de8a4ac-7299-48d7-aa18-266e8344f2ae"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[5.6 乙方应严格履行还款义务,如乙方逾期还款时,则应按照下述条款向丙
+方支付逾期管理费。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="323" width="386" height="16" uuid="31e3613a-a5cc-4204-8aef-20ae4d65cc2e"/>
+				<textElement textAlignment="Center">
+					<font fontName="SimSun" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[逾期管理费总额 = 逾期本息总额×对应逾期管理费率×逾期天数;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="215" y="340" width="142" height="22" uuid="71396d6b-570f-4831-81fc-c5baf0e6dac2"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[1— 10 天]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="362" width="142" height="22" uuid="9e9fb660-2585-4bea-996d-eab448fece10"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[逾期管理费费率]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="73" y="340" width="142" height="22" uuid="4ab5af3e-4f66-4f7f-ade7-1b31055dbecf"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[逾期天数]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="215" y="362" width="142" height="22" uuid="cad3e2bf-9cab-4a0f-8f34-55988d88a33e"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[0.1%]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="478" width="422" height="32" uuid="88cad388-a6f4-465e-83db-7ebc7c8146b0"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[(1)乙方应立即清偿本协议下尚未偿付的全部本金、利息、罚息及根据
+本协议产生的其他全部费用;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="519" width="422" height="32" uuid="f13a3dcc-3c42-4079-93f1-f0c0fe10c3dd"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[(2)丙方有权将乙方的“逾期记录”、“恶意行为”或“不良情况”记
+入公民征信系统;]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="559" width="424" height="45" uuid="66096e41-fcf5-484e-bae6-e43ea6d2ca5f"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[(3)丙方有权将乙方违约失信的相关信息及乙方其他信息向包括但不限
+于媒体、用人单位、公安机关、司法机关及有关逾期款项催收服务机构披
+露。对此丙方不承担任何责任。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="612" width="422" height="32" uuid="c35820fc-70e1-4013-a6d7-608466420203"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[(4)丁方应立即承担连带保证责任,代乙方清偿全部的借款本息、罚息
+及其他各项费用。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="654" width="422" height="32" uuid="0fb3a3de-658d-4b0c-9441-7718171eb403"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[5.8 在乙方还清全部本金、利息、罚息、逾期管理费之前,罚息及逾期管理
+费的计算不停止。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="357" y="230" width="141" height="22" uuid="98a7f787-6647-4d66-8a68-b46a7beff47b"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[10 天及以上]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="357" y="340" width="141" height="22" uuid="62c827ad-6dad-4526-b5f6-11da9db498b6"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[10 天及以上]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="357" y="252" width="141" height="22" uuid="aaa948e0-5d3a-48c9-bf9e-c27e83b6ed16"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[0.1%]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="357" y="362" width="141" height="22" uuid="db2f45a0-6a52-402a-9f9d-f67165fd3228"/>
+				<box>
+					<topPen lineWidth="1.0"/>
+					<leftPen lineWidth="1.0"/>
+					<bottomPen lineWidth="1.0"/>
+					<rightPen lineWidth="1.0"/>
+				</box>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[0.5%]]></text>
+			</staticText>
+		</band>
+		<band height="752">
+			<staticText>
+				<reportElement x="226" y="0" width="100" height="74" uuid="4b8415e6-0e14-4849-89ed-ba9197a2a9aa"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="74" width="423" height="59" uuid="bbcb8bfd-6e16-4aeb-abb8-0cc7bc108793"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[5.9 本借款协议中的所有甲方与乙方之间的借款均是相互独立的,一旦乙方
+逾期未归还借款本息,则甲方中的任何一方均有权单独向乙方及丁方追索或
+者提起诉讼。如乙方逾期支付借款服务费或提供虚假信息的,丙方亦可单独
+向乙方及丁方追索或者提起诉讼。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="141" width="424" height="45" uuid="f54ac2fb-4b6e-485a-9a9f-a93521ce948a"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[5.10 如丁方违反本协议的约定拒绝或逾期承担保证责任的,则丁方除应赔
+偿甲方由此遭受的实际经济损失外,还应向丙方支付本协议项下的借款金额
+10%的违约金。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="195" width="343" height="16" uuid="a1e6996f-35d8-4c78-b6b6-ad5f6e095fed"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[6. 提前还款]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="219" width="397" height="16" uuid="8e1cd733-5205-4cc1-8af5-ca5031526aeb"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[6.1 乙方可在借款期间任何时候提前偿还全部剩余借款。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="244" width="422" height="32" uuid="013d289e-a55e-4dc1-8a32-73c83f27a78f"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[6.2 乙方提前清偿全部剩余借款时,应向甲方一次性偿还未到期所有本息之
+和。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="284" width="343" height="16" uuid="6e8546dd-3519-4cbf-b991-0b516f018e3d"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[7. 法律适用及争议解决]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="309" width="397" height="16" uuid="6f0681b8-51e5-4553-ba1e-4f79f796aea8"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="false"/>
+				</textElement>
+				<text><![CDATA[7.1 本协议的签订、履行、终止、解释均适用中华人民共和国法律。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="333" width="422" height="32" uuid="47d3ad0f-2e66-4f8b-afc8-9bc911b2fd4d"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[7.2 本协议在履行过程中,如发生任何争执或纠纷,双方应友好协商解决;
+若协商不成,任何一方均有权向丙方所在地的人民法院提起诉讼。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="93" y="373" width="343" height="16" uuid="bdebdbbc-77bc-4349-8295-83517b654508"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[8. 附则]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="397" width="424" height="45" uuid="6c6a400c-8e4c-4a15-996c-dc24a955216e"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[8.1 本协议根据第 2 条的规定成立和生效。在乙方或丁方将本协议项下的全
+部本金、利息、逾期罚息、借款服务费、逾期管理费及其他所有相关费用全
+部偿还完毕后,本协议自动终止。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="450" width="424" height="45" uuid="afda66da-04dc-452e-b248-445f38fac2f0"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[8.2 各方可以书面协议方式对本协议作出修改和补充。经过各方签署的有关
+本协议的修改协议和补充协议是本协议组成部分,具有与本协议同等的法律
+效力。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="503" width="425" height="45" uuid="318b4a69-6f98-42b9-88b2-2896d45fa3f0"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[8.3 本协议及其修改或补充均采用通过左右逢园网站以电子文本形式制成,
+可以有一份或者多份并且每一份具有同等法律效力,并永久保存在丙方为此
+设立的专用服务器上备查和保管。各方均认可该形式的协议效力。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="556" width="422" height="32" uuid="9f03ea11-c06a-49d7-9c63-cc22803f1c64"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[8.4 如果本协议中的任何一条或多条违反适用的法律法规,则该条将被视为
+无效,但该无效条款并不影响本协议其他条款的效力。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="598" width="422" height="77" uuid="430aaa25-a79a-4152-8cee-bfb83836488f"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[8.5 本协议签订之日起至借款本息和有关费用全部清偿之日止,甲方或乙方
+的下列信息如发生变更的,其应当在相关信息发生变更三日内将更新后的信
+息提供给丙方:本人、本人的家庭联系人及紧急联系人、工作单位、居住地
+址、住所电话、手机号码、电子邮箱、银行账户的变更。若因任何一方不及
+时提供上述变更信息而带来的损失或额外费用应由该方自行承担。]]></text>
+			</staticText>
+		</band>
+		<band height="752">
+			<staticText>
+				<reportElement x="232" y="0" width="35" height="74" uuid="825dccd3-f0bb-4d3c-8710-c53eef8172de"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="74" width="425" height="45" uuid="6a359563-a515-474a-acfd-6ca6b6ec5259"/>
+				<textElement>
+					<font fontName="SimSun" size="12"/>
+				</textElement>
+				<text><![CDATA[8.6 各方同意,本协议项下的借款或债权发生转让时,为便于各方明确责任
+主体更好地履行本协议,各方可以视情况按附件所列格式制作债权转让交易
+记录并作为本协议的附件。]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="179" width="94" height="16" uuid="c583d1bd-54ed-442a-9f6f-1264c49817d6"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[甲方 (出借人):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="255" width="94" height="16" uuid="21ccf0f7-d0eb-4524-a7d5-0e344ac7e6cc"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[乙方(借款人):]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="331" width="274" height="16" uuid="0231381f-5c15-460b-a0b3-a2da426e41c5"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[丙方(见证人):中阳财富投资控股有限公司]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="407" width="94" height="16" uuid="f1a0a595-99da-40f1-9651-1f265be49ad3"/>
+				<textElement>
+					<font fontName="SimSun" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[丁方(保证人):]]></text>
+			</staticText>
+		</band>
+	</detail>
+</jasperReport>

@@ -1,5 +1,10 @@
 package com.zyfy.pojo;
 
+/**
+ * 
+ * @author matthew
+ * TB_LOAN 借款信息表
+ */
 public class Loan {
 	
 	private String ID;
